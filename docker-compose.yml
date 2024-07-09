@@ -1,0 +1,8 @@
+services:
+  minetest:
+    image: xdillfrescott/minetest:latest
+    restart: always
+    volumes:
+      - ./world:/minetest/worlds/world
+    ports:
+      - "30000:30000/udp"
