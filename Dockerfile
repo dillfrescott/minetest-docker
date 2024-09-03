@@ -11,7 +11,7 @@ libgmp-dev libjsoncpp-dev libzstd-dev libluajit-5.1-dev gettext libsdl2-dev
 
 RUN git clone https://github.com/minetest/minetest
 
-WORKDIR minetest
+WORKDIR /minetest
 
 RUN cmake . -DRUN_IN_PLACE=TRUE
 
