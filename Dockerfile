@@ -24,10 +24,10 @@ RUN mkdir -p /luanti/games
 
 WORKDIR /luanti/games
 
-RUN git clone https://github.com/VoxeLibre/VoxeLibre
+RUN git clone https://codeberg.org/mineclonia/mineclonia
 
-RUN echo "name = Dill" >> VoxeLibre/minetest.conf
+RUN echo "name = Dill" >> mineclonia/minetest.conf
 
-RUN echo "default_password = <password>" >> VoxeLibre/minetest.conf
+RUN echo "default_password = changeme" >> mineclonia/minetest.conf
 
-ENTRYPOINT ["sudo", "-u", "root", "/luanti/bin/luanti", "--server", "--gameid", "VoxeLibre", "--world", "/luanti/worlds/world"]
+ENTRYPOINT ["sudo", "-u", "root", "/luanti/bin/luanti", "--server", "--gameid", "Mineclonia", "--world", "/luanti/worlds/world"]
