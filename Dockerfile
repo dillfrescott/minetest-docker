@@ -11,8 +11,8 @@ RUN git clone https://github.com/luanti-org/luanti /luanti
 
 WORKDIR /luanti
 
-# Version 5.15.0
-RUN git checkout 62d077a00658320300bad8237d577ea11180fa8c
+# Version 5.15.1
+RUN git checkout 55c9a00d762850c558153be04397fb54876d7a79
 
 RUN cmake . -DRUN_IN_PLACE=TRUE
 
